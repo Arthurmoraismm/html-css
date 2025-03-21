@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        div.blocos{
+            display: inline-block;
+            text-align: center;
+            background-color: rgb(110, 110, 110);
+            height: 170px;
+            width: 175px;
+            border: 1px solid black;
+        }
+
+        div.blocos:hover{
+            background-color: rgb(0, 209, 0);
+        }
+        div#escondido > p {
+            display: none;
+        }
+
+        #escondido:hover{
+            color: rgb(255, 0, 0);
+        }
+
+        #escondido:hover > p{
+            display: block;
+            background-color: green;
+            width: 200px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1" class="blocos">01</div>
+    <div id="d2" class="blocos">02</div>
+    <div id="d3" class="blocos">03</div>
+    <h1>Texto oucuto </h1>
+    <p>Passe o mouse no proximo texto</p>
+    <div id = "escondido">Passe o mouse aqui
+        <p>TEXTO EXCONDIDO</p>
+    </div>
+</body>
+</html>
